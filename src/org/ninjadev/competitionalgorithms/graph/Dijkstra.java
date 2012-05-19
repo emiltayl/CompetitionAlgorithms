@@ -27,7 +27,19 @@ public class Dijkstra {
 	}
 	
 	/*
-	 * Dijkstra's algorithm for graphs represented by an adjacency matrix.
+	 * Dijkstra's algorithm for graphs represented by an adjacency matrix. This
+	 * implementation is vulnerable to integer overflows.
+	 * 
+	 * @params
+	 * int[][] graph - an n*n adjacency matrix representing the weighted
+	 * 				   directional graph. Infinite weights / no edge between
+	 * 				   nodes is indicated as Integer.MAX_VALUE.
+	 * 
+	 * int source    - the index of the source node
+	 * 
+	 * @return
+	 * Returns an array of all the Nodes in the graph (with distance from the
+	 * source node in the dist member of the node objects).
 	 */
 	public static Node[] dijkstra(int[][] graph, int source){
 		
