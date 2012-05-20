@@ -1,5 +1,6 @@
 package org.ninjadev.competitionalgorithms.tests.graph;
 
+import org.junit.Test;
 import org.ninjadev.competitionalgorithms.graph.FloydWarshall;
 
 import junit.framework.TestCase;
@@ -10,13 +11,8 @@ public class FloydWarshallTest extends TestCase {
 	/* short form for "infinity" */
 	static final int i = Integer.MAX_VALUE;
 	
-	public static void main(String[]args){
-		FloydWarshallTest.testEmptyGraph();
-		FloydWarshallTest.testMonoweightedGraph();
-		FloydWarshallTest.testHandMadeGraph();
-	}
-
-	public static void testEmptyGraph(){
+	@Test
+	public void testEmptyGraph(){
 		int[][] graph = {
 				{i,i,i,i,i,i,i,i},
 				{i,i,i,i,i,i,i,i},
@@ -37,7 +33,8 @@ public class FloydWarshallTest extends TestCase {
 		}
 	}
 	
-	public static void testMonoweightedGraph(){
+	@Test
+	public void testMonoweightedGraph(){
 		int[][] graph = {
 				{0,1,1,1,1,1,1,1},
 				{1,0,1,1,1,1,1,1},
@@ -58,7 +55,8 @@ public class FloydWarshallTest extends TestCase {
 		}
 	}
 	
-	public static void testHandMadeGraph(){
+	@Test
+	public void testHandMadeGraph(){
 		int[][] graph = {
 				{0,2,4,i,i,i,i},
 				{2,0,3,i,i,6,i},
