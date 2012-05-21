@@ -16,8 +16,8 @@ public class BellmanFord {
 	}
 	
 	/*
-	 * Bellman-Ford algorithm for graphs represented as a node-list and an edge-
-	 * list. Nodes are numbered 0..(n-1), where n is the number of nodes.
+	 * Bellman-Ford algorithm for graphs represented as a edge-list. Nodes are 
+	 * numbered 0..(n-1), where n is the number of nodes.
 	 * 
 	 * @params
 	 * Edge[] edges  - an array of Edge-objects, each representing a weighted
